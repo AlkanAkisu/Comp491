@@ -31,6 +31,10 @@ def processRequest(req):
         data = r.json()
         res = getCourseGradeResult(data['courseId'])
         return res
+    if req.get("queryResult").get("action") == "campus_weather":
+        r = requests.get("https://api.openweathermap.org/data/2.5/weather?lat=41.205&lon=29.072&appid=281ea0b2304d240d44844f9a2e3f3440")
+        data = r.json()
+        return r['weather']['main'] + r['main']['temp']
     print("Please check the action in DialogFlow")
     return {}
 

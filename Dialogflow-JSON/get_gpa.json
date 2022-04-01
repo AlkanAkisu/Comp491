@@ -1,0 +1,195 @@
+{
+  "id": "eb4c1f67-a336-4a0a-a4f2-59acca7d2a02",
+  "name": "get_gpa",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "getgpa",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "show me my GPA",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1db2bb16-7706-4850-961b-d56540c81235",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to see my GPA",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cd5b02d1-d08f-4e74-83df-e98ba3a5c537",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "could you show me my grade point average",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f361758a-c0b2-4095-bb8e-0e73718643f9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to view my GPA",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4a81ce95-67ff-48e5-8007-3756884ba07a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my average score",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "94a7c9bf-3605-41a2-bc72-c9bd4f8c6c7b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need my GPA",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "10f1d8e6-6e0c-420c-9110-89655a58833e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what is my GPA",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ead2fd94-7877-4c81-818c-05fea2e679b9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what is the GPA",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "f002cd7a-f1a0-4d66-ae32-38f5de815c81",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what is my school average",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "01f51fed-1b62-4103-8bdc-9848647dd661",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my gpa score",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "0aa001ef-a8ce-43df-87bf-e4ae26167624",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "can you please show me my GPA",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "0dc10d67-ca25-4cc7-8293-d69c85adf19e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what is my average",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "6b0e0074-718f-4413-ab4f-6c4985e2c17b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need the gpa right now",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "31d8d7ce-be7b-4c33-8f75-133db8ceae7e",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

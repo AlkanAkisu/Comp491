@@ -24,8 +24,7 @@ def processRequest(req):
     if req.get("queryResult").get("action") == "coursegrade":
         result = req.get("queryResult")
         parameters = result.get("parameters")
-        courseCode = parameters['course_code']
-        courseCode = courseCode.upper()
+        courseCode = parameters['course_code'].upper()
         URL = 'https://psa-demo.alkanakisu.repl.co/getCourseID'
         PARAMS = {'courseName':courseCode}
         HEADERS = {'Cookie':bbCookie}
@@ -36,8 +35,7 @@ def processRequest(req):
     elif req.get("queryResult").get("action") == "lettergrade":
         result = req.get("queryResult")
         parameters = result.get("parameters")
-        courseCode = parameters['course_code']
-        courseCode = courseCode.upper()
+        courseCode = parameters['course_code'].upper()
         URL = 'https://psa-demo.alkanakisu.repl.co/letterGrades'
         HEADERS = {'Cookie':KUSISCookie}
         r = requests.get(url = URL, headers=HEADERS)
@@ -66,7 +64,6 @@ def processRequest(req):
         data = r.json()
         res = getWeatherInfo(data)
         return res
-
 
     print("Please check the action in DialogFlow")
     return {}
@@ -140,13 +137,9 @@ def getCourseGradeResult(courseId):
   ]
 }
 
-
-
-
 @app.route('/test', methods=['GET'])
 def test():
     return "Hello"
-
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5001))

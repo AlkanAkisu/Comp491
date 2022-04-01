@@ -1,0 +1,93 @@
+{
+  "id": "7a4164aa-8c0e-45d4-adea-43d0c14338ec",
+  "name": "get_lettergrade",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "lettergrade",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "course_code",
+          "dataType": "@course_code",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$course_code",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What is my ",
+          "userDefined": false
+        },
+        {
+          "text": "mbge200",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " letter grade?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4fcdf3d6-5d79-40fe-9164-1b4c6c4ebb8a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Give my letter grade for ",
+          "userDefined": false
+        },
+        {
+          "text": "comp202",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "27db2f3d-60ac-41d2-8178-8f7506b7dee6",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

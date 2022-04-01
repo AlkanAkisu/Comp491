@@ -1,0 +1,255 @@
+{
+  "id": "7a5c7a63-a77b-452c-aff4-1bedc7086ac6",
+  "name": "get_campus_weather",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "campus_weather",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How is the air in campus",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d5612dca-1cac-4e73-ad7c-414bdec27a04",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "campus weather report",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "78414a74-ff96-44a1-b6ae-7165bb267053",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "koç weather",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5ed25b17-f46d-473e-9ecb-13c4f3b1820e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is it hot",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "77ced14f-6eb1-426f-8b84-7c491b718725",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is it cold",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "21621f57-eca7-459a-8bcf-84c8329c7bf7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is it sunny",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "550e29c5-3362-499b-8317-251bd52c929c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is it raining",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "007b9aef-efe9-4323-b7db-6a473e043f96",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is it snowing",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "65012ce0-22af-4176-ad92-73d038ef9ac9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "weather in school",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "94614367-eab8-432c-8fd8-7b909d1cc869",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what is the weather like",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b12cb157-4a1c-47df-873d-4891cf2c2fc7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is it raining in koç",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "589b1d5d-e838-4542-8f93-1ef20d2984c0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what is the air in campus",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0fdc2756-d289-40b0-95d0-44f739412ae0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to know weather",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2190f16d-f80d-432b-988d-eae3d2d69d6b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is it snowing around campus",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5cf6d611-41a2-45b4-946a-5e374e301538",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is it hot in the main campus",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7eb34207-d039-47fe-aaec-2831dc4e374a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "weather",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6c50d7ff-52d8-4e83-b5c6-63ec8a2b71cd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "weather report koç",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "26823093-2fb5-4f6c-8746-43c125dede24",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is it raining in main campus",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a72b43e8-1a7b-4d7d-a020-7546553a2b52",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

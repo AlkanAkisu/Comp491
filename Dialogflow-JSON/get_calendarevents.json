@@ -1,0 +1,75 @@
+{
+  "id": "5a301738-2d1d-4d2a-9fd8-db63e088c69c",
+  "name": "get_calendarevents",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "calendarevents",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tell me my deadlines",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "50783c31-c5e1-470e-847b-e755cb633f4f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Show me my assignments",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "de8ef1da-3869-4fe7-bb9d-d60761b635cb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are my incoming due dates?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "96adfa3a-9226-4030-a403-2e99c8f62880",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

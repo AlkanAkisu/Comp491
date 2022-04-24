@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "flutterwebview",
+            "cwd": "flutterwebview",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutterwebview (profile mode)",
+            "cwd": "flutterwebview",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutterwebview (release mode)",
+            "cwd": "flutterwebview",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "dialogflutter",
+            "cwd": "flutterdialog/dialogflutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "dialogflutter (profile mode)",
+            "cwd": "flutterdialog/dialogflutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "dialogflutter (release mode)",
+            "cwd": "flutterdialog/dialogflutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

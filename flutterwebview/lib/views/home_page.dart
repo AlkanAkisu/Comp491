@@ -2,16 +2,13 @@
 import 'dart:convert' as convert;
 import 'dart:io';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-// import 'package:webview_cookie_manager/webview_cookie_manager.dart';
-// import 'package:webview_flutter/webview_flutter.dart';
-// import 'package:http/http.dart' as http;
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:requests/requests.dart';
 import 'package:http/http.dart' as http;
-
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -23,9 +20,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final cookies = <Cookie>[];
   CookieManager cookieManager = CookieManager.instance();
+
   String bbCookie = '';
   String kusisCookie = '';
-
 
   InAppWebViewController? webViewController;
 
@@ -67,6 +64,11 @@ class _HomePageState extends State<HomePage> {
               onPressed: () async {
                 bbCookie = await GetBBCookies();
                 print(bbCookie);
+                await addToDatabase("123", bbCookie, true);
+
+                // await webViewController?.loadUrl(
+                //     urlRequest:
+                //         URLRequest(url: Uri.parse("https://kusis.ku.edu.tr")));
               },
               child: Text('Get BB data'),
             ),
@@ -74,20 +76,8 @@ class _HomePageState extends State<HomePage> {
               onPressed: () async {
                 kusisCookie = await GetKusisCookies();
                 print(kusisCookie);
-                var cookieHeader = {'Cookie':kusisCookie};
-                var request = http.Request('GET', Uri.parse('https://psa-demo.alkanakisu.repl.co/gpa'));
 
-                request.headers.addAll(cookieHeader);
-
-                http.StreamedResponse response = await request.send();
-
-                if (response.statusCode == 200) {
-                  print(await response.stream.bytesToString());
-                }
-                else {
-                  print(response.reasonPhrase);
-                }
-                addToDatabase(kusisCookie);
+                await addToDatabase("123", kusisCookie, false);
               },
               child: Text('Get Kusis data'),
             ),
@@ -110,8 +100,6 @@ class _HomePageState extends State<HomePage> {
     var cookieStr = '';
     cookieStr = cookies.fold(
         cookieStr, (prev, elem) => prev += '${elem.name}=${elem.value}; ');
-    await webViewController?.loadUrl(
-        urlRequest: URLRequest(url: Uri.parse("https://kusis.ku.edu.tr")));
     return cookieStr;
   }
 
@@ -130,8 +118,12 @@ class _HomePageState extends State<HomePage> {
     await cookieManager.deleteAllCookies();
   }
 
-  void addToDatabase(String cookie){
-    var databaseReference = FirebaseDatabase.instance.ref().child("test");
-    databaseReference.set(cookie);
+  Future<void> addToDatabase(String name, String cookie, bool isBB) async {
+    var ref = FirebaseFirestore.instance.collection('users');
+    var docRef = await ref.add({'BBCookie': '123', 'KusisCookie': '123'});
+    print(docRef.id);
+
+    // var databaseReference = FirebaseDatabase.instance.ref().child(name);
+    // await databaseReference.push().set({"Cookie": cookie});
   }
 }

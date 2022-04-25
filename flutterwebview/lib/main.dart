@@ -5,8 +5,7 @@ import 'package:flutterwebview/views/home_page.dart';
 // import 'dart:html';
 
 void main() {
-  // ignore: undefined_prefixed_name
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

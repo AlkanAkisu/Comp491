@@ -7,6 +7,9 @@ import 'package:flutter/material.dart';
 // import 'package:webview_flutter/webview_flutter.dart';
 // import 'package:http/http.dart' as http;
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:requests/requests.dart';
+import 'package:http/http.dart' as http;
+
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -18,6 +21,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final cookies = <Cookie>[];
   CookieManager cookieManager = CookieManager.instance();
+  String bbCookie = '';
+  String kusisCookie = '';
+
 
   InAppWebViewController? webViewController;
 
@@ -57,15 +63,28 @@ class _HomePageState extends State<HomePage> {
             ),
             TextButton(
               onPressed: () async {
-                String cookieStr = await GetBBCookies();
-                print(cookieStr);
+                bbCookie = await GetBBCookies();
+                print(bbCookie);
               },
               child: Text('Get BB data'),
             ),
             TextButton(
               onPressed: () async {
-                String cookieStr = await GetKusisCookies();
-                print(cookieStr);
+                kusisCookie = await GetKusisCookies();
+                print(kusisCookie);
+                var cookieHeader = {'Cookie':kusisCookie};
+                var request = http.Request('GET', Uri.parse('https://psa-demo.alkanakisu.repl.co/gpa'));
+
+                request.headers.addAll(cookieHeader);
+
+                http.StreamedResponse response = await request.send();
+
+                if (response.statusCode == 200) {
+                  print(await response.stream.bytesToString());
+                }
+                else {
+                  print(response.reasonPhrase);
+                }
               },
               child: Text('Get Kusis data'),
             ),

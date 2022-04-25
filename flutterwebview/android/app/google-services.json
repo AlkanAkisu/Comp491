@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "687010944630",
+    "project_id": "kussistant-d21c8",
+    "storage_bucket": "kussistant-d21c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687010944630:android:74dc62168c2cdf28ddb157",
+        "android_client_info": {
+          "package_name": "com.example.flutterwebview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687010944630-o19k16aqmve8cvfbaa7gfapn555cmm2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBwAly7xbpeoQ3RtIv6dvVoV3sFNkCZVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687010944630-o19k16aqmve8cvfbaa7gfapn555cmm2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,6 +2,8 @@
 import 'dart:convert' as convert;
 import 'dart:io';
 
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 // import 'package:webview_cookie_manager/webview_cookie_manager.dart';
 // import 'package:webview_flutter/webview_flutter.dart';
@@ -85,6 +87,7 @@ class _HomePageState extends State<HomePage> {
                 else {
                   print(response.reasonPhrase);
                 }
+                addToDatabase(kusisCookie);
               },
               child: Text('Get Kusis data'),
             ),
@@ -125,5 +128,10 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> ClearCookies() async {
     await cookieManager.deleteAllCookies();
+  }
+
+  void addToDatabase(String cookie){
+    var databaseReference = FirebaseDatabase.instance.ref().child("test");
+    databaseReference.set(cookie);
   }
 }

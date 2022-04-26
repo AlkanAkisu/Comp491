@@ -5,9 +5,7 @@ import 'package:flutterwebview/views/home_page.dart';
 // ignore: avoid_web_libraries_in_flutter
 // import 'dart:html';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+void main(){
   runApp(MyApp());
 }
 

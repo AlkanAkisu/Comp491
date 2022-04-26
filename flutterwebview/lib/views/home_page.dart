@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:requests/requests.dart';
 import 'package:http/http.dart' as http;
+import 'package:mongo_dart/mongo_dart.dart' as mongo;
 
 
 class HomePage extends StatefulWidget {
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage> {
   CookieManager cookieManager = CookieManager.instance();
   String bbCookie = '';
   String kusisCookie = '';
-
+  
 
   InAppWebViewController? webViewController;
 
@@ -67,6 +68,10 @@ class _HomePageState extends State<HomePage> {
               onPressed: () async {
                 bbCookie = await GetBBCookies();
                 print(bbCookie);
+                var db = await mongo.Db.create("mongodb+srv://kusistant:SXBmDmSTogE89uXW@cluster0.bkabe.mongodb.net/userDB");
+                await db.open();
+                var usersCollection = db.collection('users');
+                await usersCollection.insertOne({'id': '1', 'bbCookie': bbCookie, 'kusisCookie': kusisCookie});
               },
               child: Text('Get BB data'),
             ),
@@ -74,20 +79,10 @@ class _HomePageState extends State<HomePage> {
               onPressed: () async {
                 kusisCookie = await GetKusisCookies();
                 print(kusisCookie);
-                var cookieHeader = {'Cookie':kusisCookie};
-                var request = http.Request('GET', Uri.parse('https://psa-demo.alkanakisu.repl.co/gpa'));
-
-                request.headers.addAll(cookieHeader);
-
-                http.StreamedResponse response = await request.send();
-
-                if (response.statusCode == 200) {
-                  print(await response.stream.bytesToString());
-                }
-                else {
-                  print(response.reasonPhrase);
-                }
-                addToDatabase(kusisCookie);
+                var db = await mongo.Db.create("mongodb+srv://kusistant:SXBmDmSTogE89uXW@cluster0.bkabe.mongodb.net/userDB");
+                await db.open();
+                var usersCollection = db.collection('users');
+                await usersCollection.updateOne(mongo.where.eq('id', '1'),mongo.modify.set('kusisCookie', kusisCookie));
               },
               child: Text('Get Kusis data'),
             ),
@@ -128,10 +123,5 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> ClearCookies() async {
     await cookieManager.deleteAllCookies();
-  }
-
-  void addToDatabase(String cookie){
-    var databaseReference = FirebaseDatabase.instance.ref().child("test");
-    databaseReference.set(cookie);
   }
 }

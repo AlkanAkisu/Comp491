@@ -2,17 +2,14 @@
 import 'dart:convert' as convert;
 import 'dart:io';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-// import 'package:webview_cookie_manager/webview_cookie_manager.dart';
-// import 'package:webview_flutter/webview_flutter.dart';
-// import 'package:http/http.dart' as http;
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:requests/requests.dart';
 import 'package:http/http.dart' as http;
 import 'package:mongo_dart/mongo_dart.dart' as mongo;
-
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -24,9 +21,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final cookies = <Cookie>[];
   CookieManager cookieManager = CookieManager.instance();
+
   String bbCookie = '';
   String kusisCookie = '';
-  
 
   InAppWebViewController? webViewController;
 
@@ -72,6 +69,10 @@ class _HomePageState extends State<HomePage> {
                 await db.open();
                 var usersCollection = db.collection('users');
                 await usersCollection.insertOne({'id': '1', 'bbCookie': bbCookie, 'kusisCookie': kusisCookie});
+
+                // await webViewController?.loadUrl(
+                //     urlRequest:
+                //         URLRequest(url: Uri.parse("https://kusis.ku.edu.tr")));
               },
               child: Text('Get BB data'),
             ),
@@ -105,8 +106,6 @@ class _HomePageState extends State<HomePage> {
     var cookieStr = '';
     cookieStr = cookies.fold(
         cookieStr, (prev, elem) => prev += '${elem.name}=${elem.value}; ');
-    await webViewController?.loadUrl(
-        urlRequest: URLRequest(url: Uri.parse("https://kusis.ku.edu.tr")));
     return cookieStr;
   }
 

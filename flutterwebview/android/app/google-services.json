@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "687010944630",
-    "project_id": "kussistant-d21c8",
-    "storage_bucket": "kussistant-d21c8.appspot.com"
+    "project_number": "612428675062",
+    "project_id": "kusistant-cf6fa",
+    "storage_bucket": "kusistant-cf6fa.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:687010944630:android:74dc62168c2cdf28ddb157",
+        "mobilesdk_app_id": "1:612428675062:android:bc93fad0d11d715a53f9d7",
         "android_client_info": {
           "package_name": "com.example.flutterwebview"
         }
       },
       "oauth_client": [
         {
-          "client_id": "687010944630-o19k16aqmve8cvfbaa7gfapn555cmm2n.apps.googleusercontent.com",
+          "client_id": "612428675062-pae3iljbqt4hv6a01jchbj4f5h4o6u9g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBBwAly7xbpeoQ3RtIv6dvVoV3sFNkCZVs"
+          "current_key": "AIzaSyCzyOWHC0oP11_wDHhxIquTG5pjD0RKQ2s"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "687010944630-o19k16aqmve8cvfbaa7gfapn555cmm2n.apps.googleusercontent.com",
+              "client_id": "612428675062-pae3iljbqt4hv6a01jchbj4f5h4o6u9g.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

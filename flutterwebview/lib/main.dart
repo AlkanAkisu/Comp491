@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterwebview/views/home_page.dart';
+import 'firebase_options.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 // import 'dart:ui' as ui;
 // ignore: avoid_web_libraries_in_flutter
 // import 'dart:html';

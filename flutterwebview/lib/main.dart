@@ -7,17 +7,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 // ignore: avoid_web_libraries_in_flutter
 // import 'dart:html';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    name: 'kusistant-cf6fa',
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  if (Firebase.apps.isNotEmpty)
-    print('Firebase Init');
-  else
-    print('Firebase Not Init');
-
+void main(){
   runApp(MyApp());
 }
 

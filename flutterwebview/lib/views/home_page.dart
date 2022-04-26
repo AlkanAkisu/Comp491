@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:requests/requests.dart';
 import 'package:http/http.dart' as http;
+import 'package:mongo_dart/mongo_dart.dart' as mongo;
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -64,7 +65,10 @@ class _HomePageState extends State<HomePage> {
               onPressed: () async {
                 bbCookie = await GetBBCookies();
                 print(bbCookie);
-                await addToDatabase("123", bbCookie, true);
+                var db = await mongo.Db.create("mongodb+srv://kusistant:SXBmDmSTogE89uXW@cluster0.bkabe.mongodb.net/userDB");
+                await db.open();
+                var usersCollection = db.collection('users');
+                await usersCollection.insertOne({'id': '1', 'bbCookie': bbCookie, 'kusisCookie': kusisCookie});
 
                 // await webViewController?.loadUrl(
                 //     urlRequest:
@@ -76,8 +80,10 @@ class _HomePageState extends State<HomePage> {
               onPressed: () async {
                 kusisCookie = await GetKusisCookies();
                 print(kusisCookie);
-
-                await addToDatabase("123", kusisCookie, false);
+                var db = await mongo.Db.create("mongodb+srv://kusistant:SXBmDmSTogE89uXW@cluster0.bkabe.mongodb.net/userDB");
+                await db.open();
+                var usersCollection = db.collection('users');
+                await usersCollection.updateOne(mongo.where.eq('id', '1'),mongo.modify.set('kusisCookie', kusisCookie));
               },
               child: Text('Get Kusis data'),
             ),
@@ -116,14 +122,5 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> ClearCookies() async {
     await cookieManager.deleteAllCookies();
-  }
-
-  Future<void> addToDatabase(String name, String cookie, bool isBB) async {
-    var ref = FirebaseFirestore.instance.collection('users');
-    var docRef = await ref.add({'BBCookie': '123', 'KusisCookie': '123'});
-    print(docRef.id);
-
-    // var databaseReference = FirebaseDatabase.instance.ref().child(name);
-    // await databaseReference.push().set({"Cookie": cookie});
   }
 }

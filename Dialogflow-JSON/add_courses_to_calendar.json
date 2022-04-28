@@ -1,0 +1,399 @@
+{
+  "id": "8092ba6e-0f44-4232-a8b8-615cb7ecc7d2",
+  "name": "add_courses_to_calendar",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to see my times on the calendar app",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "451fb671-0076-4ed9-bedc-741cc912f270",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "courses to calendar please",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a3a970ee-8ac9-405d-a24f-c4f4c8ad75b5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "add course schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f8f9f07d-874c-430a-b77d-03ec9469ff29",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "can you put my courses to my schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1fc84c6f-ba53-45b5-994b-28e3bdb35502",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need my course times on the calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "125305df-2fde-44d7-ada8-ec8a006c0d84",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my lesson times to my agenda",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4040f164-1ae4-4cca-8468-d48cc8ec141c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "insert my school schedule to calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d39d2547-f227-4bd8-9bda-d56f089d9f0e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "put my course schedule to my calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e5227116-9845-4870-80fa-4df16dcaf446",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my schedule to google calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "98759379-b09b-44c4-81c3-ee96ddb76cc2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "lesson times on Google calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1e8078e0-9404-409a-b266-f72885a0d8ff",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "add course times to calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "78eb9375-fc62-401e-9beb-160f1c13e50a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "can you add my courses to my schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b2814fb0-e170-4c1e-950b-b24eae0781c9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "pt course time information to calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "can you add course times",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "schedule course times",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "put lesson timeline to my agenda",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want my courses on my agenda",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "put courses to google calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "add times to schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "import my school time",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "courses on google calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to see my course times on my schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "course schedule to google calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my lesson times schedled",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What is my course schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "add my courses to calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need my schedule in my aagenda",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "the schedule of lectures please",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "lecture schedule to my calendar",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need my lesson times on my agenda",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

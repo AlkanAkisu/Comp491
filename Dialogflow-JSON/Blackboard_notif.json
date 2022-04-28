@@ -1,0 +1,363 @@
+{
+  "id": "66fce317-67cc-4b94-b4d7-51d56cec006e",
+  "name": "Blackboard_notif",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "new events on courses",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fcbf6c37-56e3-4682-8b3a-39319d37b475",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Blackboard events",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "603d0220-06c7-4c1d-91ab-c02ba3015ae1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Any notifications on my courses",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "edb9a2c0-3e8d-4a62-bafa-82f299f18102",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Any new info on blackboard",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5a1d0455-7cc1-4039-844c-905fd0931ba4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Course notifications",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "72409633-5c7f-4221-817a-8de541f1a2d6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Blackboard notifications",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4c517eb3-93c6-4e93-9cf1-7e084fb029de",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Any homeworks or updates on my courses",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "de0b7ea0-6c41-4f40-8287-d4c5ea1c66d2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Anything new in blackboard?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d8c06763-197d-4fbb-bc6e-86b250195422",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Anything needs attention on my courses?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "28de02c2-e291-489d-8b71-5ed1e118e78a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Any news for my courses",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6fb5867b-89bd-467e-903e-bcc3120c3f88",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Has any event occurred in Blackboard",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e5a1c9fb-0e99-41f5-8f60-b73be8dcb1da",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Have I missed anything on Blackboard",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ee7425ea-d38d-471e-a6d9-00cd6a17cdf3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Any news on blackboard?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c49ba671-07f8-4530-bb88-2bc31b9be28e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do I have any notifications on Blackboard?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "051c779e-8b2f-4c0c-84b1-6107b735279f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "any news on blackboard",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "blacokboard notifications",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to see course news",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want course events",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "new event on blackboard?",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "have I missed anything new on my courses",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Show me if I have any new notifications on blckboard",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "The news on blackboard",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "blackboard notification info",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "course news that i missed",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "blackboard news that I missed",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "did I miss any notifications",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do I have any corse events",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

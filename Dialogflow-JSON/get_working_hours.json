@@ -1,0 +1,759 @@
+{
+  "id": "1da7b35d-3217-430b-a651-49f047893b23",
+  "name": "get_working_hours",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "campus_buisness",
+          "dataType": "@campus_buisness",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Which place would you like to know the times for?"
+          ],
+          "value": "$campus_buisness",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when is ",
+          "userDefined": false
+        },
+        {
+          "text": "gym",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " open",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d859ab91-b56f-4e74-b9b1-e13bedae5a97",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What times is the staff of ",
+          "userDefined": false
+        },
+        {
+          "text": "Pandora",
+          "userDefined": true,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " on job?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d0c7f346-2520-47df-b493-81477e3a7474",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Is it possible to visit the ",
+          "userDefined": false
+        },
+        {
+          "text": "mess hall",
+          "userDefined": true,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 0,
+      "id": "d77637e3-7a9a-4f46-9d58-9ba7b2e9e053",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when can I go to ",
+          "userDefined": false
+        },
+        {
+          "text": "Mio",
+          "userDefined": true,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 0,
+      "id": "2e9f5a8b-1337-4806-ba6d-029249db8aed",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is the ",
+          "userDefined": false
+        },
+        {
+          "text": "High Born",
+          "userDefined": true,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " working",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4ec3eb8d-9d5e-4a9d-9755-630f8951f06e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Hours of ",
+          "userDefined": false
+        },
+        {
+          "text": "Cafe Nero",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 0,
+      "id": "4f42d7f6-829f-458b-839d-e2e8f57f59af",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "When is ",
+          "userDefined": false
+        },
+        {
+          "text": "hardal",
+          "userDefined": true,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " operating?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7b1bc1a0-5215-4f58-ac15-cd71d50020e9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Gym",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " opening timeline",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e4744947-b3e2-4c9c-aa98-fc2f3058ad69",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Lokma",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " closing hours",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c0a15dc6-42b5-4c8b-a109-6ed139f984f4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is ",
+          "userDefined": false
+        },
+        {
+          "text": "espressolab",
+          "userDefined": true,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " open",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "031ac325-774d-458b-900f-cc5047e4d2ea",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What are the working hours for ",
+          "userDefined": false
+        },
+        {
+          "text": "Nero",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3ae83874-c158-4419-93f6-bed4bff4e3bf",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "When does ",
+          "userDefined": false
+        },
+        {
+          "text": "divan",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " open?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "423b2210-2946-4d48-928c-766c84e0e6e4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is ",
+          "userDefined": false
+        },
+        {
+          "text": "nero",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " open",
+          "userDefined": false
+        }
+      ],
+      "count": 4,
+      "id": "659bd947-98fd-41af-9ca2-ab9f5d9946bc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is ",
+          "userDefined": false
+        },
+        {
+          "text": "mess hall",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " open",
+          "userDefined": false
+        }
+      ],
+      "count": 4,
+      "id": "63e875f3-c6e1-4900-ada3-ac2675f5cec5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to go to the ",
+          "userDefined": false
+        },
+        {
+          "text": "gym",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " is it possible?",
+          "userDefined": false
+        }
+      ],
+      "count": 4,
+      "id": "4a0d4556-c811-49bd-98ef-735ae99bc9cb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ice rink",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " work schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 4,
+      "id": "751f698a-e456-4ade-b897-19e6ef0cd0b4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Schedule of ",
+          "userDefined": false
+        },
+        {
+          "text": "divan cafe",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 4,
+      "id": "ab65b02b-355b-479f-a466-f7d518b8ef94",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "work schedule of ",
+          "userDefined": false
+        },
+        {
+          "text": "nero",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 4,
+      "id": "746f30d2-6148-4d30-b8bc-ba375c575ada",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is the ",
+          "userDefined": false
+        },
+        {
+          "text": "ice rink",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " open?",
+          "userDefined": false
+        }
+      ],
+      "count": 4,
+      "id": "44e3d907-321d-4423-b45b-a4980562ce2e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when does the ",
+          "userDefined": false
+        },
+        {
+          "text": "library",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " close",
+          "userDefined": false
+        }
+      ],
+      "count": 4,
+      "id": "931bb366-0e94-4ec9-a64d-17a6c44cf083",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "closing hours of ",
+          "userDefined": false
+        },
+        {
+          "text": "lokma",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 4,
+      "id": "43d87020-7bdc-4258-9881-333e368ccf65",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is ",
+          "userDefined": false
+        },
+        {
+          "text": "mio",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " open or when does ",
+          "userDefined": false
+        },
+        {
+          "text": "it",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " open",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f81d6f34-531a-4c04-aaa1-19a9fb0800f2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Timeline of ",
+          "userDefined": false
+        },
+        {
+          "text": "pandora",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 4,
+      "id": "c6f6cf4d-b6b1-4d61-bf57-318fbf38ce23",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Pandora",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " service schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "74d25221-0e27-4af6-9f3e-5f388e53ccf4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "service schedule of ",
+          "userDefined": false
+        },
+        {
+          "text": "Hardal",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " please",
+          "userDefined": false
+        }
+      ],
+      "count": 4,
+      "id": "ec765831-7b7b-45ad-9c43-061e6c4ba645",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to kno the times of ",
+          "userDefined": false
+        },
+        {
+          "text": "fitness",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 4,
+      "id": "4a02cad7-bb83-44dc-8413-9a2a654c4630",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is ",
+          "userDefined": false
+        },
+        {
+          "text": "mio",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " open or when does it open",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": "59348d3f-d9ef-4906-8180-4d28bd587027",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Pandora",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " srvice schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": "55a6f68d-1c26-44ee-a435-e11b4d645001",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "work schedule of ",
+          "userDefined": false
+        },
+        {
+          "text": "pandora",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 3,
+      "id": "94c8a3a4-6c7d-427e-8e97-bd0a918a80eb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "working hours of ",
+          "userDefined": false
+        },
+        {
+          "text": "espressolab",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        }
+      ],
+      "count": 3,
+      "id": "df331b4f-37da-4cf5-8b30-2638faec4e18",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is ",
+          "userDefined": false
+        },
+        {
+          "text": "nero",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " closing",
+          "userDefined": false
+        }
+      ],
+      "count": 3,
+      "id": "bfb6951e-8158-442f-8150-bb974ac3a1d5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "can I go to ",
+          "userDefined": false
+        },
+        {
+          "text": "nero",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " right ",
+          "userDefined": false
+        },
+        {
+          "text": "now",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fc523756-10a1-4b83-a313-b45afd66eb0d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "can I go to ",
+          "userDefined": false
+        },
+        {
+          "text": "nero",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " right now?",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "c4b92db6-3340-42a6-911a-d78c0fe3ba7f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "gym",
+          "userDefined": false,
+          "alias": "campus_buisness",
+          "meta": "@campus_buisness"
+        },
+        {
+          "text": " working schedule",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

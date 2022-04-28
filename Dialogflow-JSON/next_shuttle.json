@@ -1,0 +1,381 @@
+{
+  "id": "d2e6756e-f24b-46a5-8ef3-7ba3a35c6655",
+  "name": "next_shuttle",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when will the service bus go",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5f67506f-e7af-4131-8113-e180eb786892",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "shuttle bus driving time",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "61dc89be-9105-4a43-a145-c98ba657e2a8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to catch a shuttle service",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f7dbfbaa-1506-4979-9cdb-23d0a5f7bc9e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "next shuttle when",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5e86bd5a-f5dd-42be-9ff0-d32a68dcf0e9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "time remaining for service bus",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6d9542a3-64f5-438c-8864-b721fe2caa1a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need the time of the shuttle",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d589d03d-fe12-43ca-818f-a951a9458efb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "west campus service next",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b214d97a-80f2-4be9-990c-40f4aaab92e8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How much time until next shuttle goes",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "668ad32e-5076-46f0-8995-c6bf7169ce43",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Time of west campus service",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "58de3235-9113-4aae-aec6-b2c79797fa4b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "When is the next shuttle",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "80fbb64c-7cde-4ea7-8193-2c80b1ebbf59",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "next shuttle",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "91e22bb3-d659-4eb9-aaf6-9daea104778d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when is service",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "b56be666-0dbc-4829-bdda-f2a98bf64217",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to go to the shuttle bus",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "d3596bbb-3db5-4802-b84d-bf4151a1e291",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "west campus service time",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "e9a6c292-e119-473c-b5b6-d02420aa1a88",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "next shuttle bus time please",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "d8d2c002-1519-4098-8b9a-b2c2497aaa91",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to go to west campus",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "5482f388-2d14-4f2c-96f3-2de28616b99e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "When is the latest time I can go to campus",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "db971980-aa5a-4de5-8b0d-6884fb4f9e2c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to get to main campus",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "52d54227-9069-4a78-88bc-ea08368a7987",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "shuttle service bus time for the next one",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "ad0cc31c-1ada-4279-a831-17ff5bf0bf4a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "When is the earliest service to campus",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "34f203a0-d95a-4dbe-9314-89e98a60d355",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I NEED TO GET TO THE CAMPUS ASAP",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "685a640e-c094-4d53-b5e6-86bd7b110385",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need the time for service",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "ae69fb80-82fd-46c7-80a8-db52a905279c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when can I get on the bus",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "c70e97bd-f406-4121-a7b6-0ffd0b8f71e5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when is the earliest campus shuttle",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "d17d51ac-1b3a-4c6d-8bc1-2e8e6a20ecaa",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I NEED TO GET TOT HE CAMPUS ASAP",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "672a88e9-8df4-4f26-8f89-0d00eb233203",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "campus shuttle ",
+          "userDefined": false
+        },
+        {
+          "text": "time",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 1,
+      "id": "5352e782-5c51-4b99-8f3b-be28fab797a9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "earliest arrival at campus",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "ac57ba57-111f-4c09-9a47-d958e74b5373",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "please get me to the west",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "43655ad1-0ee8-4a57-816e-101a6dc5caef",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

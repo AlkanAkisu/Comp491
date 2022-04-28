@@ -1,0 +1,333 @@
+{
+  "id": "1285cfaa-d7f7-4a07-b738-ae33e05d2e6f",
+  "name": "get_grade",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "coursegrade",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "course_code",
+          "dataType": "@course_code",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Which course would you like the grades for?"
+          ],
+          "value": "$course_code",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "grade of ",
+          "userDefined": false
+        },
+        {
+          "text": "MBGE 320",
+          "userDefined": true,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "70d96e4e-2614-469e-82cf-25d3440a55e2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want ",
+          "userDefined": false
+        },
+        {
+          "text": "phys441",
+          "userDefined": true,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " grades",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bfe2ca05-8f2b-4a07-9478-e9c2b2ae96bb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "score of ",
+          "userDefined": false
+        },
+        {
+          "text": "dasc521",
+          "userDefined": true,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5505ac9f-1742-46f9-a16c-b7b3d27522bd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "fetch the ",
+          "userDefined": false
+        },
+        {
+          "text": "germ 201",
+          "userDefined": true,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " grades",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "55a92eb8-a420-4da9-a967-d4015c84b80d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "show me my ",
+          "userDefined": false
+        },
+        {
+          "text": "HUMS 108",
+          "userDefined": true,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " scores",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3c422055-3078-45d6-be00-ebdd084a92a9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what grades I have for ",
+          "userDefined": false
+        },
+        {
+          "text": "MAVA221",
+          "userDefined": true,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "cc03bea3-4688-4528-b3ba-9ac27a9f8351",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my ",
+          "userDefined": false
+        },
+        {
+          "text": "elec332",
+          "userDefined": true,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " score",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7867039a-fd61-4c8e-90d8-21380eac63e8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what is my ",
+          "userDefined": false
+        },
+        {
+          "text": "comp304",
+          "userDefined": true,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " grade?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e9606cca-be36-4758-a604-06a666788bf5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hey what is my ",
+          "userDefined": false
+        },
+        {
+          "text": "MGMT 304",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " grade?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fdb34169-86b8-4922-846a-2be2ffd9e434",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what scores for ",
+          "userDefined": false
+        },
+        {
+          "text": "mava303",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "5761bbec-a221-49e0-be6e-1c50e1ceaceb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "grade for ",
+          "userDefined": false
+        },
+        {
+          "text": "math205",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "efbbb781-f151-4278-bfc7-fca30162dccc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my grades",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d250d173-fbf5-4833-ab9c-f6399886474f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "show me my ",
+          "userDefined": false
+        },
+        {
+          "text": "comp123",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " scores",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "5b405bfe-2ca8-43f8-9a39-ee82c7b34c75",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "opor953",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " grade record",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

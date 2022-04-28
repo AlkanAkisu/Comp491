@@ -1,6 +1,6 @@
 {
-  "id": "eb4c1f67-a336-4a0a-a4f2-59acca7d2a02",
-  "name": "get_gpa",
+  "id": "41d15dda-b7a3-45a8-9004-948c72cf9161",
+  "name": "Default Welcome Intent",
   "auto": true,
   "condition": "",
   "conditionalFollowupEvents": [],
@@ -8,7 +8,11 @@
   "context": [],
   "contexts": [],
   "endInteraction": false,
-  "events": [],
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
   "fallbackIntent": false,
   "liveAgentHandoff": false,
   "parentId": null,
@@ -16,7 +20,7 @@
   "priority": 500000,
   "responses": [
     {
-      "action": "getgpa",
+      "action": "input.welcome",
       "affectedContexts": [],
       "parameters": [],
       "defaultResponsePlatforms": {},
@@ -24,7 +28,12 @@
         {
           "type": "message",
           "condition": "",
-          "speech": []
+          "speech": [
+            "Hi! I'm KUsistant. How are you doing?",
+            "Hello! I'm KUsistant. How can I help you?",
+            "Good day! What can KUsistant do for you today?",
+            "Greetings! How can KUsistant assist?"
+          ]
         }
       ],
       "resetContexts": false
@@ -37,171 +46,195 @@
       "isTemplate": false,
       "data": [
         {
-          "text": "GPA?",
+          "text": "just going to say hi",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "f8620309-af88-40ed-a8d9-bea8c4a972be",
+      "id": "33270afa-b149-4e2e-85a7-6b010ac4bf9c",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "show me my GPA",
+          "text": "heya",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "1db2bb16-7706-4850-961b-d56540c81235",
+      "id": "99836d38-c377-43be-b15f-f20c556b6976",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "I need to see my GPA",
+          "text": "hello hi",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "cd5b02d1-d08f-4e74-83df-e98ba3a5c537",
+      "id": "217d6b12-24f9-4057-9dc4-79454df9756d",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "could you show me my grade point average",
+          "text": "howdy",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "f361758a-c0b2-4095-bb8e-0e73718643f9",
+      "id": "4ab6a039-38b1-43fa-86ed-82e284d8b8f3",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "I want to view my GPA",
+          "text": "hey there",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "4a81ce95-67ff-48e5-8007-3756884ba07a",
+      "id": "684f1dc2-05ba-438f-81a5-4a5cf97d6221",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "my average score",
-          "userDefined": false
-        }
-      ],
-      "count": 0,
-      "id": "94a7c9bf-3605-41a2-bc72-c9bd4f8c6c7b",
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "I need my GPA",
-          "userDefined": false
-        }
-      ],
-      "count": 0,
-      "id": "10f1d8e6-6e0c-420c-9110-89655a58833e",
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "what is my GPA",
-          "userDefined": false
-        }
-      ],
-      "count": 0,
-      "id": "ead2fd94-7877-4c81-818c-05fea2e679b9",
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "what is the GPA",
+          "text": "hi there",
           "userDefined": false
         }
       ],
       "count": 1,
-      "id": "f002cd7a-f1a0-4d66-ae32-38f5de815c81",
+      "id": "a934986c-38f1-481e-b01b-8d5b26c0c4c9",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "what is my school average",
+          "text": "greetings",
           "userDefined": false
         }
       ],
-      "count": 1,
-      "id": "01f51fed-1b62-4103-8bdc-9848647dd661",
+      "count": 0,
+      "id": "56482433-9cd1-4b33-b930-c18321c3fdfe",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "my gpa score",
+          "text": "hey",
           "userDefined": false
         }
       ],
-      "count": 1,
-      "id": "0aa001ef-a8ce-43df-87bf-e4ae26167624",
+      "count": 0,
+      "id": "49a9e0ef-c32c-47f5-a0c0-da0e213f6b33",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "can you please show me my GPA",
+          "text": "long time no see",
           "userDefined": false
         }
       ],
-      "count": 1,
-      "id": "0dc10d67-ca25-4cc7-8293-d69c85adf19e",
+      "count": 0,
+      "id": "338efb5a-12da-4f96-b26f-16e486082bbe",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "what is my average",
+          "text": "hello",
           "userDefined": false
         }
       ],
-      "count": 1,
-      "id": "6b0e0074-718f-4413-ab4f-6c4985e2c17b",
+      "count": 0,
+      "id": "2ccd19ef-13d0-46a3-bf8e-7305f909b175",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "I need the gpa right now",
+          "text": "lovely day isn't it",
           "userDefined": false
         }
       ],
-      "count": 1,
-      "id": "31d8d7ce-be7b-4c33-8f75-133db8ceae7e",
+      "count": 0,
+      "id": "e42bd46c-7817-4de6-9d7e-8efa66a0c56d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I greet you",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "84ffe58d-ca50-4dc4-a516-f591b0fc6bbf",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hello again",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b8286b7f-e50d-47b0-bfab-f6f108488ce9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "49d0d0ad-b89e-4110-a83d-bc51801390f1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hello there",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f50f19b5-2371-4f17-a6b7-647ee403636e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "a good day",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9fad3887-7131-48f2-8c16-58f2b0607e9d",
       "updated": null
     }
   ],
   "webhookForSlotFilling": false,
-  "webhookUsed": true
+  "webhookUsed": false
 }

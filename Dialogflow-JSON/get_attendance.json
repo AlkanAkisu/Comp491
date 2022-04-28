@@ -1,0 +1,411 @@
+{
+  "id": "2579b10e-2c56-4b51-a639-ef90ff03ecae",
+  "name": "get_attendance",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "course_code",
+          "dataType": "@course_code",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$course_code",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "classes of ",
+          "userDefined": false
+        },
+        {
+          "text": "lolr404",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " I have been to",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "011d2007-0228-4c90-9cf0-9ec50ade6cb5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many times I have missed for ",
+          "userDefined": false
+        },
+        {
+          "text": "toto404",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "e454ddeb-4f41-484f-85fd-4370dc7bce20",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ofof994",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " absences",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1a268b05-d39f-4229-b032-082cfa94d07d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what is my records for ",
+          "userDefined": false
+        },
+        {
+          "text": "roro303",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "62939267-915d-49d2-8c39-31b59b55f3a5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "the attendance of ",
+          "userDefined": false
+        },
+        {
+          "text": "poop404",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "18109d6a-0ffc-4000-ac80-85201de2cbf9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many classes I have been to ",
+          "userDefined": false
+        },
+        {
+          "text": "ffkf030",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "97e7febb-d108-42b5-a284-23257c8939b7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "did I miss ",
+          "userDefined": false
+        },
+        {
+          "text": "goog040",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " many times",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b1b7c43c-c53c-489a-b199-1c26f85bfc3a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many absences in ",
+          "userDefined": false
+        },
+        {
+          "text": "kfko303",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "bbbf28a1-d4ec-4151-841d-502d4462e452",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many classes I missed for ",
+          "userDefined": false
+        },
+        {
+          "text": "mech505",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "72bb730d-af10-43a7-8901-6bd438a54e0b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "attendance record for ",
+          "userDefined": false
+        },
+        {
+          "text": "comp423",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": "35c06ea1-f870-4f31-9b67-46506a589cc0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what is my ",
+          "userDefined": false
+        },
+        {
+          "text": "MAVA303",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " attendance",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "339a2334-75bd-4699-b1a8-da0cefadfb13",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "absences for ",
+          "userDefined": false
+        },
+        {
+          "text": "oooo404",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many times I have attended ",
+          "userDefined": false
+        },
+        {
+          "text": "yoyo505",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "have I missed ",
+          "userDefined": false
+        },
+        {
+          "text": "uyuy666",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " this semester",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "poto405",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " absence record",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "otot707",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " class attendence sheet",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "poer244",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " records of attendance",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "how many times did I exist in ",
+          "userDefined": false
+        },
+        {
+          "text": "tort452",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "bono232",
+          "userDefined": false,
+          "alias": "course_code",
+          "meta": "@course_code"
+        },
+        {
+          "text": " visitations",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

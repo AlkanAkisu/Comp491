@@ -1,6 +1,6 @@
 {
-  "id": "eb4c1f67-a336-4a0a-a4f2-59acca7d2a02",
-  "name": "get_gpa",
+  "id": "15625e6e-b961-4e28-abc0-072f63a6b4c7",
+  "name": "get_exam_times",
   "auto": true,
   "condition": "",
   "conditionalFollowupEvents": [],
@@ -16,7 +16,7 @@
   "priority": 500000,
   "responses": [
     {
-      "action": "getgpa",
+      "action": "",
       "affectedContexts": [],
       "parameters": [],
       "defaultResponsePlatforms": {},
@@ -37,171 +37,123 @@
       "isTemplate": false,
       "data": [
         {
-          "text": "GPA?",
+          "text": "I need final time",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "f8620309-af88-40ed-a8d9-bea8c4a972be",
+      "id": "f1a8fd95-271f-499f-ad1e-83ab0a78e9ab",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "show me my GPA",
+          "text": "What is my midterms schedule look like",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "1db2bb16-7706-4850-961b-d56540c81235",
+      "id": "746fb313-6724-4a27-bbf6-261c2ec3a6c8",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "I need to see my GPA",
+          "text": "schedule of upcoming exams",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "cd5b02d1-d08f-4e74-83df-e98ba3a5c537",
+      "id": "ea15938a-0b37-4dad-8abc-4affbcc12cd2",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "could you show me my grade point average",
+          "text": "When are the finals",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "f361758a-c0b2-4095-bb8e-0e73718643f9",
+      "id": "a32f85e0-2674-421a-a09e-a1ade20b0988",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "I want to view my GPA",
+          "text": "My midterms times",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "4a81ce95-67ff-48e5-8007-3756884ba07a",
+      "id": "ca3961a6-87f5-43bf-a735-fadb01dded8f",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "my average score",
+          "text": "What is my exam schedule",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "94a7c9bf-3605-41a2-bc72-c9bd4f8c6c7b",
+      "id": "096250d7-6661-408b-89ec-a36ba1f91a4d",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "I need my GPA",
+          "text": "when are my midterms",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "10f1d8e6-6e0c-420c-9110-89655a58833e",
+      "id": null,
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "what is my GPA",
+          "text": "upcoming exams",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": "ead2fd94-7877-4c81-818c-05fea2e679b9",
+      "id": null,
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "what is the GPA",
+          "text": "schedule of my finals",
           "userDefined": false
         }
       ],
-      "count": 1,
-      "id": "f002cd7a-f1a0-4d66-ae32-38f5de815c81",
+      "count": 0,
+      "id": null,
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "what is my school average",
+          "text": "Can I get the midterm timeline",
           "userDefined": false
         }
       ],
-      "count": 1,
-      "id": "01f51fed-1b62-4103-8bdc-9848647dd661",
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "my gpa score",
-          "userDefined": false
-        }
-      ],
-      "count": 1,
-      "id": "0aa001ef-a8ce-43df-87bf-e4ae26167624",
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "can you please show me my GPA",
-          "userDefined": false
-        }
-      ],
-      "count": 1,
-      "id": "0dc10d67-ca25-4cc7-8293-d69c85adf19e",
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "what is my average",
-          "userDefined": false
-        }
-      ],
-      "count": 1,
-      "id": "6b0e0074-718f-4413-ab4f-6c4985e2c17b",
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "I need the gpa right now",
-          "userDefined": false
-        }
-      ],
-      "count": 1,
-      "id": "31d8d7ce-be7b-4c33-8f75-133db8ceae7e",
+      "count": 0,
+      "id": null,
       "updated": null
     }
   ],
   "webhookForSlotFilling": false,
-  "webhookUsed": true
+  "webhookUsed": false
 }

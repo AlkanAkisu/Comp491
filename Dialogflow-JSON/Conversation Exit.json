@@ -1,0 +1,104 @@
+{
+  "id": "b6fa13b1-b794-479f-92d0-c8a26e4a977c",
+  "name": "Conversation Exit",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": true,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Okay, see you!",
+            "I hope I helped you!",
+            "Have a good day!",
+            "See you!"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "See you",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "93989a09-1dbf-43a3-bf3d-3ded4b32970c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Goodbye",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "56d9b5a3-8670-4849-aa6b-3ed9c1457f5a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Stop",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "af172ced-52b8-4dca-916c-2ecf300fba20",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quit",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "85f55eb1-9b62-40e1-9fb5-11cd9f606858",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Exit",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8825cd02-8384-4ca8-afba-b99d38a7ecf2",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,92 @@
+{
+  "id": "23a19f6f-c9a8-42c7-bcb6-a5448a79738c",
+  "name": "exchangeRate",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "rate",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "currency-name",
+          "dataType": "@sys.currency-name",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$currency-name",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "currency-name1",
+          "dataType": "@sys.currency-name",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$currency-name1",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Static response"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "USD",
+          "userDefined": false,
+          "alias": "currency-name",
+          "meta": "@sys.currency-name"
+        },
+        {
+          "text": " to ",
+          "userDefined": false
+        },
+        {
+          "text": "EUR",
+          "userDefined": false,
+          "alias": "currency-name1",
+          "meta": "@sys.currency-name"
+        }
+      ],
+      "count": 0,
+      "id": "b3a5fee1-4edf-477f-b3ca-f43bc96fcbc6",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:flutter/material.dart';
 
@@ -34,6 +36,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   late DialogFlowtter dialogFlowtter;
   final TextEditingController _controller = TextEditingController();
+  String cookie = 'Not initialized';
 
   List<Map<String, dynamic>> messages = [];
 
@@ -85,8 +88,13 @@ class _MyHomePageState extends State<MyHomePage> {
   void sendMessage(String text) async {
     if (text.isEmpty) return;
     setState(() {
+      var map = Map.fromEntries((<String, String>{'cookie': cookie}).entries);
+      print(map);
       addMessage(
-        Message(text: DialogText(text: [text])),
+        Message(
+            text: DialogText(text: [text]),
+            
+        ),
         true,
       );
     });

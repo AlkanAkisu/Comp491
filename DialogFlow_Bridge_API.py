@@ -9,11 +9,13 @@ import datetime
 
 app = Flask(__name__)
 
-myclient = pymongo.MongoClient("mongodb+srv://kusistant:SXBmDmSTogE89uXW@cluster0.bkabe.mongodb.net")
+myclient = pymongo.MongoClient("mongodb+srv://kusistantt:Av8zzmtP3uiCbj3p@cluster0.bkabe.mongodb.net")
 mydb = myclient["userDB"]
 mycol = mydb["users"]
 
-userInfo = mycol.find_one({'id':'1'})
+userInfo = mycol.find_one({'id':3094})
+
+print(userInfo)
 
 bbCookie = str(userInfo['bbCookie'])
 KUSISCookie = str(userInfo['kusisCookie'])
@@ -81,7 +83,7 @@ def processRequest(req):
 def getWeatherInfo(data):
     maxTemp = data['daily']['temperature_2m_max'][0]
     minTemp = data['daily']['temperature_2m_min'][0]
-    weatherData = f"{maxTemp} / {minTemp}"
+    weatherData = f"Max Temp: {maxTemp} / Min Temp: {minTemp}"
     return {"fulfillmentText": weatherData}
 
 def getGPA(data):

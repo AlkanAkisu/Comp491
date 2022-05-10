@@ -9,10 +9,11 @@ import 'package:flutter/material.dart';
 // import 'package:webview_flutter/webview_flutter.dart';
 // import 'package:http/http.dart' as http;
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:flutterwebview/views/chat_main.dart';
+import 'package:flutterwebview/views/chat_page.dart';
 import 'package:requests/requests.dart';
 import 'package:http/http.dart' as http;
 import 'package:mongo_dart/mongo_dart.dart' as mongo;
-
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -26,7 +27,8 @@ class _HomePageState extends State<HomePage> {
   CookieManager cookieManager = CookieManager.instance();
   String bbCookie = '';
   String kusisCookie = '';
-  
+  String mongoName =
+      'mongodb+srv://kusistant:29dtCUGuPCrcJSBi@cluster0.bkabe.mongodb.net/userDB';
 
   InAppWebViewController? webViewController;
 
@@ -35,7 +37,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.amber,
       appBar: AppBar(
-        title: Text('WebView Test Screen'),
+        title: Text('KUsistant'),
       ),
       body: Container(
         child: Column(
@@ -68,10 +70,14 @@ class _HomePageState extends State<HomePage> {
               onPressed: () async {
                 bbCookie = await GetBBCookies();
                 print(bbCookie);
-                var db = await mongo.Db.create("mongodb+srv://kusistant:SXBmDmSTogE89uXW@cluster0.bkabe.mongodb.net/userDB");
+                var db = await mongo.Db.create(mongoName);
                 await db.open();
                 var usersCollection = db.collection('users');
-                await usersCollection.insertOne({'id': '1', 'bbCookie': bbCookie, 'kusisCookie': kusisCookie});
+                await usersCollection.insertOne({
+                  'id': '1',
+                  'bbCookie': bbCookie,
+                  'kusisCookie': kusisCookie
+                });
               },
               child: Text('Get BB data'),
             ),
@@ -79,10 +85,15 @@ class _HomePageState extends State<HomePage> {
               onPressed: () async {
                 kusisCookie = await GetKusisCookies();
                 print(kusisCookie);
-                var db = await mongo.Db.create("mongodb+srv://kusistant:SXBmDmSTogE89uXW@cluster0.bkabe.mongodb.net/userDB");
+                var db = await mongo.Db.create(mongoName);
                 await db.open();
                 var usersCollection = db.collection('users');
-                await usersCollection.updateOne(mongo.where.eq('id', '1'),mongo.modify.set('kusisCookie', kusisCookie));
+                await usersCollection.updateOne(mongo.where.eq('id', '31'),
+                    mongo.modify.set('kusisCookie', kusisCookie));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChatMain()),
+                );
               },
               child: Text('Get Kusis data'),
             ),

@@ -2,14 +2,10 @@ import 'dart:io';
 
 import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterwebview/views/chat_page.dart';
 
-import 'chat_page.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class ChatMain extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -54,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Column(
         children: [
-          Expanded(child: ChatPage(messages: messages)),
+          Expanded(child: ChatBody(messages: messages)),
           Container(
             padding: const EdgeInsets.symmetric(
               horizontal: 10,
@@ -92,8 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
       print(map);
       addMessage(
         Message(
-            text: DialogText(text: [text]),
-            
+          text: DialogText(text: [text]),
         ),
         true,
       );

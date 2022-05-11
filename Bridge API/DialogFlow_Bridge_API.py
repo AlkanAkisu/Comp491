@@ -6,12 +6,15 @@ from flask import request
 from flask import make_response
 import pymongo
 import datetime
+from replit import web
 
 app = Flask(__name__)
 
 myclient = pymongo.MongoClient("mongodb+srv://kusistantt:Av8zzmtP3uiCbj3p@cluster0.bkabe.mongodb.net")
 mydb = myclient["userDB"]
 mycol = mydb["users"]
+
+userID = 0
 
 userInfo = mycol.find_one({'id':3094})
 
@@ -37,7 +40,7 @@ def processRequest(req):
         result = req.get("queryResult")
         parameters = result.get("parameters")
         courseCode = parameters['course_code'].upper()
-        URL = 'https://psa-demo.alkanakisu.repl.co/getCourseID'
+        URL = 'https://comp491.alkanakisu.repl.co/getCourseID'
         PARAMS = {'courseName':courseCode}
         HEADERS = {'Cookie':bbCookie}
         r = requests.get(url = URL, params = PARAMS, headers=HEADERS)
@@ -48,14 +51,14 @@ def processRequest(req):
         result = req.get("queryResult")
         parameters = result.get("parameters")
         courseCode = parameters['course_code'].upper()
-        URL = 'https://psa-demo.alkanakisu.repl.co/letterGrades'
+        URL = 'https://comp491.alkanakisu.repl.co/letterGrades'
         HEADERS = {'Cookie':KUSISCookie}
         r = requests.get(url = URL, headers=HEADERS)
         data = r.json()
         res = getLetterGrade(data, courseCode)
         return res
     elif req.get("queryResult").get("action") == "calendarevents":
-        URL = 'https://psa-demo.alkanakisu.repl.co/calendarEvents'
+        URL = 'https://comp491.alkanakisu.repl.co/calendarEvents'
         HEADERS = {'Cookie':bbCookie}
         currTime, endTime = setBetweenDates()
         PARAMS = {'from':currTime, 'to':endTime}
@@ -64,7 +67,7 @@ def processRequest(req):
         res = getCalendarEvents(data)
         return res
     elif req.get("queryResult").get("action") == "getgpa":
-        URL = 'https://psa-demo.alkanakisu.repl.co/gpa'
+        URL = 'https://comp491.alkanakisu.repl.co/gpa'
         HEADERS = {'Cookie':KUSISCookie}
         r = requests.get(url = URL, headers=HEADERS)
         data = r.json()
@@ -131,7 +134,7 @@ def getLetterGrade(data, courseCode):
 }
 
 def getCourseGradeResult(courseId):
-    URL = 'https://psa-demo.alkanakisu.repl.co/mygrades/'+str(courseId)
+    URL = 'https://comp491.alkanakisu.repl.co/mygrades/'+str(courseId)
     HEADERS = {'Cookie':bbCookie}
     r = requests.get(url = URL, headers=HEADERS)
     data = r.json()
@@ -153,7 +156,5 @@ def getCourseGradeResult(courseId):
 def test():
     return "Hello"
 
-if __name__ == '__main__':
-    port = int(os.getenv('PORT', 5001))
-    print("Starting app on port %d" % port)
-    app.run(debug=True, port=port, host='0.0.0.0')
+
+web.run(app)

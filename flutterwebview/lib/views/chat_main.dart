@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterwebview/views/chat_page.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ChatMain extends StatelessWidget {
   // This widget is the root of your application.
@@ -33,13 +33,18 @@ class _MyHomePageState extends State<MyHomePage> {
   late DialogFlowtter dialogFlowtter;
   final TextEditingController _controller = TextEditingController();
   String cookie = 'Not initialized';
+  final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
   List<Map<String, dynamic>> messages = [];
 
   @override
   void initState() {
     super.initState();
-    DialogFlowtter.fromFile().then((instance) => dialogFlowtter = instance);
+    _prefs.then((prefs) {
+      String sessionID = prefs.getInt('userID').toString();
+      DialogFlowtter.fromFile(sessionId: sessionID)
+          .then((instance) => dialogFlowtter = instance);
+    });
   }
 
   @override

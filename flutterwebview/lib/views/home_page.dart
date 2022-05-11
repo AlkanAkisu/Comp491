@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'dart:convert' as convert;
 import 'dart:io';
+import 'dart:math';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -14,6 +15,7 @@ import 'package:flutterwebview/views/chat_page.dart';
 import 'package:requests/requests.dart';
 import 'package:http/http.dart' as http;
 import 'package:mongo_dart/mongo_dart.dart' as mongo;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -23,14 +25,32 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
+
   final cookies = <Cookie>[];
   CookieManager cookieManager = CookieManager.instance();
   String bbCookie = '';
   String kusisCookie = '';
   String mongoName =
-      'mongodb+srv://kusistant:29dtCUGuPCrcJSBi@cluster0.bkabe.mongodb.net/userDB';
+      'mongodb+srv://kusistantt:Av8zzmtP3uiCbj3p@cluster0.bkabe.mongodb.net/userDB';
 
   InAppWebViewController? webViewController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _prefs.then((SharedPreferences prefs) async {
+      var userID = prefs.getInt('userID');
+      if (userID == null) {
+        var id = Random().nextInt(9000) + 1000;
+        await prefs.setInt("userID", id);
+        userID = id;
+      }
+      print('The user id is $userID');
+      return userID;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -73,8 +93,9 @@ class _HomePageState extends State<HomePage> {
                 var db = await mongo.Db.create(mongoName);
                 await db.open();
                 var usersCollection = db.collection('users');
+                var id = (await _prefs).getInt('userID');
                 await usersCollection.insertOne({
-                  'id': '1',
+                  'id': id,
                   'bbCookie': bbCookie,
                   'kusisCookie': kusisCookie
                 });
@@ -88,7 +109,8 @@ class _HomePageState extends State<HomePage> {
                 var db = await mongo.Db.create(mongoName);
                 await db.open();
                 var usersCollection = db.collection('users');
-                await usersCollection.updateOne(mongo.where.eq('id', '31'),
+                var id = (await _prefs).getInt('userID');
+                await usersCollection.updateOne(mongo.where.eq('id', id),
                     mongo.modify.set('kusisCookie', kusisCookie));
                 Navigator.push(
                   context,

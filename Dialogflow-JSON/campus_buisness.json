@@ -1,0 +1,37 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": true,
+  "name": "campus_buisness",
+  "automatedExpansion": true,
+  "entries": [
+    {
+      "value": "Cafe Nero",
+      "synonyms": [
+        "Cafe Nero"
+      ]
+    },
+    {
+      "value": "Divan",
+      "synonyms": [
+        "Divan",
+        "Divan Sports Cafe"
+      ]
+    },
+    {
+      "value": "Lokma",
+      "synonyms": [
+        "Lokma"
+      ]
+    },
+    {
+      "value": "Gym",
+      "synonyms": [
+        "Gym",
+        "Fitness Center"
+      ]
+    }
+  ],
+  "id": "29a09f58-2e7c-41ec-881e-7487966bb4c3",
+  "isOverridable": false
+}

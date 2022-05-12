@@ -6,7 +6,7 @@ from flask import request
 from flask import make_response
 import pymongo
 import datetime
-from replit import web
+import time
 
 app = Flask(__name__)
 
@@ -14,28 +14,28 @@ myclient = pymongo.MongoClient("mongodb+srv://kusistantt:Av8zzmtP3uiCbj3p@cluste
 mydb = myclient["userDB"]
 mycol = mydb["users"]
 
-userID = 0
+userID = ''
 
-userInfo = mycol.find_one({'id':3094})
+bbCookie = ""
+KUSISCookie = ""
 
-print(userInfo)
 
-bbCookie = str(userInfo['bbCookie'])
-KUSISCookie = str(userInfo['kusisCookie'])
-
-print(bbCookie)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
     req = request.get_json(silent=True, force=True)
-    res = processRequest(req)
+    userID = int(req.get("session").split("/")[4])
+    res = processRequest(req, userID)
     res = json.dumps(res, indent=4)
     r = make_response(res)
     r.headers['Content-Type'] = 'application/json'
     return r
 
 
-def processRequest(req):
+def processRequest(req, userID):
+    userInfo = mycol.find_one({'id':userID})
+    bbCookie = str(userInfo['bbCookie'])
+    KUSISCookie = str(userInfo['kusisCookie'])
     if req.get("queryResult").get("action") == "coursegrade":
         result = req.get("queryResult")
         parameters = result.get("parameters")
@@ -45,7 +45,7 @@ def processRequest(req):
         HEADERS = {'Cookie':bbCookie}
         r = requests.get(url = URL, params = PARAMS, headers=HEADERS)
         data = r.json()
-        res = getCourseGradeResult(data['courseId'])
+        res = getCourseGradeResult(data['courseId'], bbCookie)
         return res
     elif req.get("queryResult").get("action") == "lettergrade":
         result = req.get("queryResult")
@@ -71,7 +71,6 @@ def processRequest(req):
         HEADERS = {'Cookie':KUSISCookie}
         r = requests.get(url = URL, headers=HEADERS)
         data = r.json()
-        print(data)
         res = getGPA(data)
         return res
     elif req.get("queryResult").get("action") == "campus_weather":
@@ -92,7 +91,7 @@ def getWeatherInfo(data):
 def getGPA(data):
     GPA = data['gpa']
     print("Your gpa is: ", GPA)
-    return {"fulfillmentText": GPA}
+    return {"fulfillmentText": f"Your GPA is {GPA}"}
 
 def setBetweenDates():
     currTime = datetime.datetime.now()
@@ -103,12 +102,15 @@ def getCalendarEvents(data):
     results = []
     for event in data:
         dateAndTime = event['endDate'].split('T')[0] + " / " +(event['endDate'].split('T')[1]).split('.')[0]
-        results.append(f"Course: {event['calendarId'].split('-')[0]}<\br>Assignment Name: {event['title']}<\br>Due Date: {dateAndTime}")
+        results.append(f"Course: {event['calendarId'].split('-')[0]}\nAssignment Name: {event['title']}\nDue Date: {dateAndTime}\n\n")
+    result = "-> "+"-> ".join(results)
     return {
   "fulfillmentMessages": [
     {
       "text": {
-        "text": results
+        "text": [
+            result
+        ]
       }
     }
   ]
@@ -126,27 +128,30 @@ def getLetterGrade(data, courseCode):
     {
       "text": {
         "text": [
-            letterGrade
+            f"Your letter grade for {courseCode} is {letterGrade}"
           ]
       }
     }
   ]
 }
 
-def getCourseGradeResult(courseId):
+def getCourseGradeResult(courseId, bbCookie):
     URL = 'https://comp491.alkanakisu.repl.co/mygrades/'+str(courseId)
     HEADERS = {'Cookie':bbCookie}
     r = requests.get(url = URL, headers=HEADERS)
     data = r.json()
     gradeList = []
     for item in data:
-        gradeList.append(f"{item['name']}: {item['grade']}/{item['maxGrade']}\n")
-
+        gradeList.append(f"{item['name']}: {item['grade']}/{item['maxGrade']}\n\n")
+    result = "-> "+"-> ".join(gradeList)
+    print(result)
     return {
   "fulfillmentMessages": [
     {
       "text": {
-        "text": gradeList
+        "text": [
+        result
+        ]
       }
     }
   ]
@@ -156,5 +161,7 @@ def getCourseGradeResult(courseId):
 def test():
     return "Hello"
 
-
-web.run(app)
+if __name__ == '__main__':
+    port = int(os.getenv('PORT', 5001))
+    print("Starting app on port %d" % port)
+    app.run(debug=True, port=port, host='0.0.0.0')

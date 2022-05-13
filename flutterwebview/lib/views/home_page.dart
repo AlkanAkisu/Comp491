@@ -91,11 +91,17 @@ class _HomePageState extends State<HomePage> {
                 await db.open();
                 var usersCollection = db.collection('users');
                 var id = (await _prefs).getInt('userID');
-                await usersCollection.insertOne({
-                  'id': id,
-                  'bbCookie': bbCookie,
-                  'kusisCookie': kusisCookie
-                });
+                var tempval = await usersCollection.findOne({'id': id});
+                if (tempval == null) {
+                  await usersCollection.insertOne({
+                    'id': id,
+                    'bbCookie': bbCookie,
+                    'kusisCookie': kusisCookie
+                  });
+                } else {
+                  await usersCollection.updateOne(mongo.where.eq('id', id),
+                      mongo.modify.set('bbCookie', bbCookie));
+                }
               },
               child: Text('Get BB data'),
             ),

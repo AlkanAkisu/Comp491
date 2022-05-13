@@ -64,7 +64,9 @@ class _MessageContainer extends StatelessWidget {
             default:
               return Container(
                 decoration: BoxDecoration(
-                  color: isUserMessage ? Colors.blue : Colors.orange,
+                  color: isUserMessage
+                      ? Color.fromRGBO(37, 211, 102, 1)
+                      : Color.fromRGBO(124, 132, 140, 1),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 padding: const EdgeInsets.all(10),

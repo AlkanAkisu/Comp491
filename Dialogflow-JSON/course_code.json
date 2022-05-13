@@ -1,0 +1,17 @@
+{
+  "isRegexp": true,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "course_code",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "\\S{4}\\s*\\d{3}",
+      "synonyms": [
+        "\\S{4}\\s*\\d{3}"
+      ]
+    }
+  ],
+  "id": "70adbbe1-40da-4c5f-a42a-b8b72ab30e18",
+  "isOverridable": false
+}

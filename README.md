@@ -19,3 +19,5 @@ Chat Screen:
 - On this screen, a Dialogflow integrated chat screen allows the user to chat with our personal assistant. It recognizes intents and entities with the help
 of NLP. It responds to the user according to their requests.
 <img width="379" alt="Screen Shot 2022-05-19 at 19 04 09" src="https://user-images.githubusercontent.com/31079280/169346333-d7bff9ef-85af-417e-b8e6-3c1ee47c804b.png">
+
+How to setup :gear:	

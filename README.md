@@ -1,4 +1,4 @@
-# Comp491
+# KUsistant
 
 KUsistant is our computer engineering design project. 
 It is a personal student assistant. 

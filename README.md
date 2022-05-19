@@ -21,4 +21,18 @@ of NLP. It responds to the user according to their requests.
 <img width="379" alt="Screen Shot 2022-05-19 at 19 04 09" src="https://user-images.githubusercontent.com/31079280/169346333-d7bff9ef-85af-417e-b8e6-3c1ee47c804b.png">
 
 How to setup :gear::
-1. Clone git repository using ``` git clone  ```
+
+1. Clone git repository using ``` git clone https://github.com/AlkanAkisu/Comp491.git ```
+
+2. Run the following commands to run bridge API on ngrok server:
+``` cd Comp491 ``` ``` python3 DialogFlow_Bridge_API.py ``` ``` ngrok http 5001 ```
+
+3. Change the fulfillment webhook URL on Dialogflow with newly generated https ngrok url like ```https://xxxx-xx-xxx-xx-xx.ngrok.io/webhook```
+
+4. Run main API in repl.it server in https://replit.com/@ALKANAKISU/Comp491#.replit
+To run use the following commands in the repl.it shell:
+``` cd Scrape\ API/ ``` ``` python3 main.py ```
+
+5. Lastly, run the flutter application:
+``` cd flutterwebview ``` ``` flutter pub get ``` ``` flutter run ```
+

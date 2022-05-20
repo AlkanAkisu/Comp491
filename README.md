@@ -1,5 +1,7 @@
 # KUsistant
 
+"For detailed docs -> https://kusistant.readthedocs.io/en/latest/index.html"
+
 KUsistant is our computer engineering design project. 
 It is a personal student assistant. 
 It aims to help students meet their academic and personal needs. 

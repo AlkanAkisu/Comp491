@@ -33,6 +33,12 @@ def webhook():
 
 
 def processRequest(req, userID):
+    '''
+    Posts request to the relevant API and processes the result.
+    Req: JSON
+    userID: Int
+    Returns processed JSON
+    '''
     userInfo = mycol.find_one({'id':userID})
     bbCookie = str(userInfo['bbCookie'])
     KUSISCookie = str(userInfo['kusisCookie'])
@@ -83,22 +89,41 @@ def processRequest(req, userID):
     return {}
 
 def getWeatherInfo(data):
+    '''
+    Processes JSON returned from weather API
+    Data: JSON
+    Returns max and min temperature as JSON
+    '''
     maxTemp = data['daily']['temperature_2m_max'][0]
     minTemp = data['daily']['temperature_2m_min'][0]
     weatherData = f"Max Temp: {maxTemp} / Min Temp: {minTemp}"
     return {"fulfillmentText": weatherData}
 
 def getGPA(data):
+    '''
+    Processes JSON from our Blackboard API to extract GPA
+    Data: JSON
+    Returns GPA as JSON
+    '''
     GPA = data['gpa']
     print("Your gpa is: ", GPA)
     return {"fulfillmentText": f"Your GPA is {GPA}"}
 
 def setBetweenDates():
+    '''
+    Returns a date range between now and next 14 days
+    Returns time in millliseconds
+    ''' 
     currTime = datetime.datetime.now()
     endTime = currTime + datetime.timedelta(days=14)
     return int(currTime.timestamp())*1000, int(endTime.timestamp())*1000
 
 def getCalendarEvents(data):
+    '''
+    Processes JSON from our Blackboard API to extract upcoming events
+    Data: JSON
+    Returns JSON
+    '''   
     results = []
     for event in data:
         dateAndTime = event['endDate'].split('T')[0] + " / " +(event['endDate'].split('T')[1]).split('.')[0]
@@ -119,6 +144,12 @@ def getCalendarEvents(data):
 
 
 def getLetterGrade(data, courseCode):
+    '''
+    Processes JSON from our KUSIS API to extract letter grade of given course
+    Data: JSON
+    courseCode: String
+    Returns letter grade as JSON
+    '''    
     letterGrade = " "
     for course in data:
         if course['code'].replace(" ", "") == courseCode:
@@ -136,6 +167,12 @@ def getLetterGrade(data, courseCode):
 }
 
 def getCourseGradeResult(courseId, bbCookie):
+    '''
+    Processes JSON from our Blackboard API to extract course number scores
+    courseId: String
+    bbCookie: String
+    Returns numerical grades as JSON
+    '''  
     URL = 'https://comp491.alkanakisu.repl.co/mygrades/'+str(courseId)
     HEADERS = {'Cookie':bbCookie}
     r = requests.get(url = URL, headers=HEADERS)

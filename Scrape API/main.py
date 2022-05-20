@@ -16,6 +16,10 @@ def hello():
 # Index page
 @app.route('/allCourses')
 def getAllCourses():
+  '''
+  Gets all courses from blackboard API
+  Return all courses as JSON
+  '''
   cookie = request.headers.get('Cookie')
   bb_API = BlackBoardAPI(cookie)
   courses = bb_API.getAllCourses()
@@ -26,6 +30,10 @@ def getAllCourses():
 
 @app.route('/getCourseID')
 def getCourseID():
+  '''
+  Gets the course ID of a certain course with arguments courseName and header Cookie
+  Returns the course ID as JSON
+  '''  
   courseCode = request.args.get('courseName')
   cookie = request.headers.get('Cookie')
   bb_API = BlackBoardAPI(cookie)
@@ -46,6 +54,10 @@ def getCourseID():
   
 @app.route('/mygrades/<course_id>')
 def getGrade(course_id):
+  '''
+  Gets the grade of a certain course id
+  Returns the grade of a course as JSON
+  '''    
   cookie = request.headers.get('Cookie')
   bb_API = BlackBoardAPI(cookie)
   grades = bb_API.getGrades(course_id)
@@ -58,6 +70,10 @@ def getGrade(course_id):
   
 @app.route('/calendarEvents')
 def getCalendarEvent():
+  '''
+  It gets from and to values as headers and gets the cookie and creates calendar events
+  Returns the calendar events as JSON
+  '''      
   cookie = request.headers.get('Cookie')
   
   from_ms = request.args.get('from')
@@ -72,6 +88,10 @@ def getCalendarEvent():
   
 @app.route('/letterGrades')
 def getLetterGrades():
+  '''
+  It gets the letter grade of a certain course by taking the cookie as header
+  Returns the letter grade as JSON
+  '''      
   cookie = request.headers.get('Cookie')
   records = KusisAPI(cookie).getLetterGrades()
   json_string = json.dumps([record.__dict__ for record in records])
@@ -81,6 +101,10 @@ def getLetterGrades():
   
 @app.route('/gpa')
 def getGPA():
+  '''
+  It gets the GPA information of a student by taking the cookie as header
+  Returns the GPA as JSON
+  '''        
   cookie = request.headers.get('Cookie')
   records = KusisAPI(cookie).getGPA()
   json_string = json.dumps(records)

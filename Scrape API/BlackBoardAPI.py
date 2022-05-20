@@ -11,6 +11,11 @@ class BlackBoardAPI:
         self.cookie = cookie
 
     def getAllCourses(self):
+        '''
+        It gets the all courses from Blackboard 
+        Returns the courses as array
+        '''
+
         url = 'https://ku.blackboard.com/webapps/portal/execute/tabs/tabAction'
 
         payload = "action=refreshAjaxModule&modId=_22_1&tabId=_2_1&tab_tab_group_id=_2_1"
@@ -54,6 +59,11 @@ class BlackBoardAPI:
         return courses
 
     def getGrades(self, courseID):
+        '''
+        It gets the grades from Blackboard
+        Returns the grades as array
+        '''
+
         url = f"https://ku.blackboard.com/webapps/bb-mygrades-BB5f0295f0bb494/myGrades?course_id={courseID}&stream_name=mygrades"
 
         payload = {}
@@ -106,6 +116,10 @@ class BlackBoardAPI:
         return grades
 
     def getCalendarEvents(self, from_date_ms, to_date_ms):
+        '''
+        It gets the calendar events from Blackboard
+        Returns the calendar events as json
+        '''
 
         url = f"https://ku.blackboard.com/webapps/calendar/calendarData/selectedCalendarEvents?start={from_date_ms}&end={to_date_ms}&mode=personal"
         # print(url)

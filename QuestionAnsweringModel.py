@@ -5,6 +5,13 @@ from transformers import BertTokenizer
 
 
 def predict_answer(question, context):
+    '''
+    Predicts an answer for the given question from the context
+    Question: String
+    Context: String 
+    Returns predicted answer as String
+    '''
+    
     model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
     tokenizer = BertTokenizer.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
     input_ids = torch.tensor(tokenizer.encode(question,

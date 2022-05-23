@@ -4,7 +4,9 @@ from bs4 import BeautifulSoup
 import datetime
 import json
 
-
+'''
+This is the BlackBoard API for the BlackBoard related requests such as calendar events and course grades
+'''
 class BlackBoardAPI:
 
     def __init__(self, cookie: str):
@@ -12,8 +14,10 @@ class BlackBoardAPI:
 
     def getAllCourses(self):
         '''
-        It gets the all courses from Blackboard 
-        Returns the courses as array
+        It gets the all courses from Blackboard and returns the courses as list
+        
+        :return: the courses list
+        :rtype: list
         '''
 
         url = 'https://ku.blackboard.com/webapps/portal/execute/tabs/tabAction'
@@ -60,8 +64,11 @@ class BlackBoardAPI:
 
     def getGrades(self, courseID):
         '''
-        It gets the grades from Blackboard
-        Returns the grades as array
+        It gets the grades of a certain course from Blackboard and returns the grades as list
+
+        :param int courseID: The course id for the wanted course grade
+        :return: the grade for given course id
+        :rtype: int
         '''
 
         url = f"https://ku.blackboard.com/webapps/bb-mygrades-BB5f0295f0bb494/myGrades?course_id={courseID}&stream_name=mygrades"
@@ -117,8 +124,12 @@ class BlackBoardAPI:
 
     def getCalendarEvents(self, from_date_ms, to_date_ms):
         '''
-        It gets the calendar events from Blackboard
-        Returns the calendar events as json
+        It gets the calendar events from Blackboard and returns the calendar events as JSON
+
+        :param str from_date_ms: start date of calendar date interval
+        :param str to_date_ms: end date of calendar date interval
+        :return: the calendar events on the given interval
+        :rtype: JSON
         '''
 
         url = f"https://ku.blackboard.com/webapps/calendar/calendarData/selectedCalendarEvents?start={from_date_ms}&end={to_date_ms}&mode=personal"

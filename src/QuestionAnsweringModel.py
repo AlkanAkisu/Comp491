@@ -4,12 +4,19 @@ from transformers import BertForQuestionAnswering
 from transformers import BertTokenizer
 
 
+'''
+This is the question answering model on BERT for more humane answers
+'''
+
 def predict_answer(question, context):
     '''
     Predicts an answer for the given question from the context
-    Question: String
-    Context: String 
-    Returns predicted answer as String
+
+    :param str question: The question asking to the model
+    :param str context: The context of the asked question
+
+    :return: the predicted answer
+    :rtype: str
     '''
     
     model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')

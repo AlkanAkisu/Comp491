@@ -74,8 +74,149 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="dialogflow-bridge-api-module">
-<h1>DialogFlow_Bridge_API module<a class="headerlink" href="#dialogflow-bridge-api-module" title="Permalink to this headline"></a></h1>
+  <section id="module-DialogFlow_Bridge_API">
+<span id="dialogflow-bridge-api-module"></span><h1>DialogFlow_Bridge_API module<a class="headerlink" href="#module-DialogFlow_Bridge_API" title="Permalink to this headline"></a></h1>
+<dl class="py data">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.KUSISCookie">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">KUSISCookie</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#DialogFlow_Bridge_API.KUSISCookie" title="Permalink to this definition"></a></dt>
+<dd><p>This is the connection between Dialogflow and KUsistant Flutter application</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.getCalendarEvents">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">getCalendarEvents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DialogFlow_Bridge_API.getCalendarEvents" title="Permalink to this definition"></a></dt>
+<dd><p>Processes JSON from our BlackBoard API to extract calendar events</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>JSON</em>) – The answer from the BlackBoard API</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the processed JSON with the calendar events</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.getCourseGradeResult">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">getCourseGradeResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">courseId</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bbCookie</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DialogFlow_Bridge_API.getCourseGradeResult" title="Permalink to this definition"></a></dt>
+<dd><p>Processes JSON from our Blackboard API to extract course grades</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>courseId</strong> (<em>str</em>) – The course id for the wanted grades</p></li>
+<li><p><strong>bbCookie</strong> (<em>str</em>) – The cookie for user’s BlackBoard</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the processed JSON with the course grades</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.getGPA">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">getGPA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DialogFlow_Bridge_API.getGPA" title="Permalink to this definition"></a></dt>
+<dd><p>Processes JSON from our BlackBoard API to extract GPA</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>JSON</em>) – The answer from the BlackBoard API</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the processed JSON with the GPA value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.getLetterGrade">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">getLetterGrade</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">courseCode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DialogFlow_Bridge_API.getLetterGrade" title="Permalink to this definition"></a></dt>
+<dd><p>Processes JSON from our KUSIS API to extract letter grade of given course</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>JSON</em>) – The answer from the KUSIS API</p></li>
+<li><p><strong>courseCode</strong> (<em>str</em>) – The course for wanted letter grade</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the processed JSON with the letter grade</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.getWeatherInfo">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">getWeatherInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DialogFlow_Bridge_API.getWeatherInfo" title="Permalink to this definition"></a></dt>
+<dd><p>Processes JSON returned from weather API</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>JSON</em>) – The answer from the OpenWeather API</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the processed JSON with the max and min temperature values</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.processRequest">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">processRequest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userID</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DialogFlow_Bridge_API.processRequest" title="Permalink to this definition"></a></dt>
+<dd><p>Posts request to the relevant API and processes the result.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>req</strong> (<em>str</em>) – The request for the API</p></li>
+<li><p><strong>userID</strong> (<em>int</em>) – The userID mapped to the cookies</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the processed JSON from the given request</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>JSON</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.setBetweenDates">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">setBetweenDates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DialogFlow_Bridge_API.setBetweenDates" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a time range between now and next 14 days in milliseconds</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the int pair values of now and next 14 days in milliseconds</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.test">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DialogFlow_Bridge_API.test" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="DialogFlow_Bridge_API.webhook">
+<span class="sig-prename descclassname"><span class="pre">DialogFlow_Bridge_API.</span></span><span class="sig-name descname"><span class="pre">webhook</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DialogFlow_Bridge_API.webhook" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
 </section>
 
 

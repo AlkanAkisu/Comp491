@@ -1,4 +1,0 @@
-Test API
-===========
-
-.. automodule::DialogFlow_Bridge_API.py

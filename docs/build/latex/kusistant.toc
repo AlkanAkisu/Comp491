@@ -1,0 +1,12 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}KUsistant is a personal student assistant. It aims to help student meet their academic and personal needs.}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}KUsistant is being developed by 4 Koç University Computer Engineering students: Alkan, Burak, Ismail and Mete. You can read below our docs for different APIs and modules.}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Source codes}{1}{subsection.1.1.1}%
+\contentsline {subsubsection}{BlackBoardAPI module}{1}{subsubsection*.3}%
+\contentsline {subsubsection}{DialogFlow\_Bridge\_API module}{2}{subsubsection*.11}%
+\contentsline {subsubsection}{KusisAPI module}{3}{subsubsection*.22}%
+\contentsline {subsubsection}{QuestionAnsweringModel module}{3}{subsubsection*.27}%
+\contentsline {subsubsection}{main module}{4}{subsubsection*.29}%
+\contentsline {chapter}{\numberline {2}Indices and tables}{5}{chapter.2}%
+\contentsline {chapter}{Python Module Index}{7}{section*.37}%
+\contentsline {chapter}{Index}{9}{section*.38}%

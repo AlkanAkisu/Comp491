@@ -1,0 +1,91 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter A
+  \item \spxentry{AcademicRecord}\spxextra{class in KusisAPI}, \hyperpage{3}
+
+  \indexspace
+  \bigletter B
+  \item \spxentry{BlackBoardAPI}
+    \subitem \spxentry{module}, \hyperpage{1}
+  \item \spxentry{BlackBoardAPI}\spxextra{class in BlackBoardAPI}, \hyperpage{1}
+
+  \indexspace
+  \bigletter C
+  \item \spxentry{Course}\spxextra{class in BlackBoardAPI}, \hyperpage{1}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{DialogFlow\_Bridge\_API}
+    \subitem \spxentry{module}, \hyperpage{2}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{getAllCourses()}\spxextra{BlackBoardAPI.BlackBoardAPI method}, \hyperpage{1}
+  \item \spxentry{getAllCourses()}\spxextra{in module main}, \hyperpage{4}
+  \item \spxentry{getCalendarEvent()}\spxextra{in module main}, \hyperpage{4}
+  \item \spxentry{getCalendarEvents()}\spxextra{BlackBoardAPI.BlackBoardAPI method}, \hyperpage{1}
+  \item \spxentry{getCalendarEvents()}\spxextra{in module DialogFlow\_Bridge\_API}, \hyperpage{2}
+  \item \spxentry{getCourseGradeResult()}\spxextra{in module DialogFlow\_Bridge\_API}, 
+		\hyperpage{2}
+  \item \spxentry{getCourseID()}\spxextra{in module main}, \hyperpage{4}
+  \item \spxentry{getGPA()}\spxextra{in module DialogFlow\_Bridge\_API}, \hyperpage{2}
+  \item \spxentry{getGPA()}\spxextra{in module main}, \hyperpage{4}
+  \item \spxentry{getGPA()}\spxextra{KusisAPI.KusisAPI method}, \hyperpage{3}
+  \item \spxentry{getGrade()}\spxextra{in module main}, \hyperpage{4}
+  \item \spxentry{getGrades()}\spxextra{BlackBoardAPI.BlackBoardAPI method}, \hyperpage{1}
+  \item \spxentry{getLetterGrade()}\spxextra{in module DialogFlow\_Bridge\_API}, \hyperpage{2}
+  \item \spxentry{getLetterGrades()}\spxextra{in module main}, \hyperpage{4}
+  \item \spxentry{getLetterGrades()}\spxextra{KusisAPI.KusisAPI method}, \hyperpage{3}
+  \item \spxentry{getWeatherInfo()}\spxextra{in module DialogFlow\_Bridge\_API}, \hyperpage{2}
+  \item \spxentry{Grade}\spxextra{class in BlackBoardAPI}, \hyperpage{1}
+
+  \indexspace
+  \bigletter H
+  \item \spxentry{hello()}\spxextra{in module main}, \hyperpage{4}
+
+  \indexspace
+  \bigletter K
+  \item \spxentry{KusisAPI}
+    \subitem \spxentry{module}, \hyperpage{3}
+  \item \spxentry{KusisAPI}\spxextra{class in KusisAPI}, \hyperpage{3}
+  \item \spxentry{KUSISCookie}\spxextra{in module DialogFlow\_Bridge\_API}, \hyperpage{2}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{main}
+    \subitem \spxentry{module}, \hyperpage{4}
+  \item \spxentry{module}
+    \subitem \spxentry{BlackBoardAPI}, \hyperpage{1}
+    \subitem \spxentry{DialogFlow\_Bridge\_API}, \hyperpage{2}
+    \subitem \spxentry{KusisAPI}, \hyperpage{3}
+    \subitem \spxentry{main}, \hyperpage{4}
+    \subitem \spxentry{QuestionAnsweringModel}, \hyperpage{3}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{predict\_answer()}\spxextra{in module QuestionAnsweringModel}, \hyperpage{3}
+  \item \spxentry{print()}\spxextra{BlackBoardAPI.Grade method}, \hyperpage{2}
+  \item \spxentry{processRequest()}\spxextra{in module DialogFlow\_Bridge\_API}, \hyperpage{2}
+
+  \indexspace
+  \bigletter Q
+  \item \spxentry{QuestionAnsweringModel}
+    \subitem \spxentry{module}, \hyperpage{3}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{setBetweenDates()}\spxextra{in module DialogFlow\_Bridge\_API}, \hyperpage{3}
+
+  \indexspace
+  \bigletter T
+  \item \spxentry{test()}\spxextra{in module DialogFlow\_Bridge\_API}, \hyperpage{3}
+
+  \indexspace
+  \bigletter W
+  \item \spxentry{webhook()}\spxextra{in module DialogFlow\_Bridge\_API}, \hyperpage{3}
+
+\end{sphinxtheindex}

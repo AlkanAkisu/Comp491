@@ -1,5 +1,5 @@
 from flask import Flask, request,make_response
-from replit import web
+#from replit import web
 from BlackBoardAPI import BlackBoardAPI
 from KusisAPI import KusisAPI
 import json
@@ -130,4 +130,4 @@ def getGPA():
   # print(json_string)
   return r
   
-web.run(app)
+#web.run(app)

@@ -1,0 +1,39 @@
+\indexentry{module@\spxentry{module}!BlackBoardAPI@\spxentry{BlackBoardAPI}|hyperpage}{1}
+\indexentry{BlackBoardAPI@\spxentry{BlackBoardAPI}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{BlackBoardAPI (class in BlackBoardAPI)@\spxentry{BlackBoardAPI}\spxextra{class in BlackBoardAPI}|hyperpage}{1}
+\indexentry{getAllCourses() (BlackBoardAPI.BlackBoardAPI method)@\spxentry{getAllCourses()}\spxextra{BlackBoardAPI.BlackBoardAPI method}|hyperpage}{1}
+\indexentry{getCalendarEvents() (BlackBoardAPI.BlackBoardAPI method)@\spxentry{getCalendarEvents()}\spxextra{BlackBoardAPI.BlackBoardAPI method}|hyperpage}{1}
+\indexentry{getGrades() (BlackBoardAPI.BlackBoardAPI method)@\spxentry{getGrades()}\spxextra{BlackBoardAPI.BlackBoardAPI method}|hyperpage}{1}
+\indexentry{Course (class in BlackBoardAPI)@\spxentry{Course}\spxextra{class in BlackBoardAPI}|hyperpage}{1}
+\indexentry{Grade (class in BlackBoardAPI)@\spxentry{Grade}\spxextra{class in BlackBoardAPI}|hyperpage}{1}
+\indexentry{print() (BlackBoardAPI.Grade method)@\spxentry{print()}\spxextra{BlackBoardAPI.Grade method}|hyperpage}{2}
+\indexentry{module@\spxentry{module}!DialogFlow\_Bridge\_API@\spxentry{DialogFlow\_Bridge\_API}|hyperpage}{2}
+\indexentry{DialogFlow\_Bridge\_API@\spxentry{DialogFlow\_Bridge\_API}!module@\spxentry{module}|hyperpage}{2}
+\indexentry{KUSISCookie (in module DialogFlow\_Bridge\_API)@\spxentry{KUSISCookie}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{2}
+\indexentry{getCalendarEvents() (in module DialogFlow\_Bridge\_API)@\spxentry{getCalendarEvents()}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{2}
+\indexentry{getCourseGradeResult() (in module DialogFlow\_Bridge\_API)@\spxentry{getCourseGradeResult()}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{2}
+\indexentry{getGPA() (in module DialogFlow\_Bridge\_API)@\spxentry{getGPA()}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{2}
+\indexentry{getLetterGrade() (in module DialogFlow\_Bridge\_API)@\spxentry{getLetterGrade()}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{2}
+\indexentry{getWeatherInfo() (in module DialogFlow\_Bridge\_API)@\spxentry{getWeatherInfo()}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{2}
+\indexentry{processRequest() (in module DialogFlow\_Bridge\_API)@\spxentry{processRequest()}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{2}
+\indexentry{setBetweenDates() (in module DialogFlow\_Bridge\_API)@\spxentry{setBetweenDates()}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{3}
+\indexentry{test() (in module DialogFlow\_Bridge\_API)@\spxentry{test()}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{3}
+\indexentry{webhook() (in module DialogFlow\_Bridge\_API)@\spxentry{webhook()}\spxextra{in module DialogFlow\_Bridge\_API}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!KusisAPI@\spxentry{KusisAPI}|hyperpage}{3}
+\indexentry{KusisAPI@\spxentry{KusisAPI}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{AcademicRecord (class in KusisAPI)@\spxentry{AcademicRecord}\spxextra{class in KusisAPI}|hyperpage}{3}
+\indexentry{KusisAPI (class in KusisAPI)@\spxentry{KusisAPI}\spxextra{class in KusisAPI}|hyperpage}{3}
+\indexentry{getGPA() (KusisAPI.KusisAPI method)@\spxentry{getGPA()}\spxextra{KusisAPI.KusisAPI method}|hyperpage}{3}
+\indexentry{getLetterGrades() (KusisAPI.KusisAPI method)@\spxentry{getLetterGrades()}\spxextra{KusisAPI.KusisAPI method}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!QuestionAnsweringModel@\spxentry{QuestionAnsweringModel}|hyperpage}{3}
+\indexentry{QuestionAnsweringModel@\spxentry{QuestionAnsweringModel}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{predict\_answer() (in module QuestionAnsweringModel)@\spxentry{predict\_answer()}\spxextra{in module QuestionAnsweringModel}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!main@\spxentry{main}|hyperpage}{4}
+\indexentry{main@\spxentry{main}!module@\spxentry{module}|hyperpage}{4}
+\indexentry{getAllCourses() (in module main)@\spxentry{getAllCourses()}\spxextra{in module main}|hyperpage}{4}
+\indexentry{getCalendarEvent() (in module main)@\spxentry{getCalendarEvent()}\spxextra{in module main}|hyperpage}{4}
+\indexentry{getCourseID() (in module main)@\spxentry{getCourseID()}\spxextra{in module main}|hyperpage}{4}
+\indexentry{getGPA() (in module main)@\spxentry{getGPA()}\spxextra{in module main}|hyperpage}{4}
+\indexentry{getGrade() (in module main)@\spxentry{getGrade()}\spxextra{in module main}|hyperpage}{4}
+\indexentry{getLetterGrades() (in module main)@\spxentry{getLetterGrades()}\spxextra{in module main}|hyperpage}{4}
+\indexentry{hello() (in module main)@\spxentry{hello()}\spxextra{in module main}|hyperpage}{4}
